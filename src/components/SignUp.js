@@ -1,15 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
-const Login = () => {
-  useEffect(() => {
-    fetch('http://localhost:3000/api/v1/users')
-      .then((res) => res.json())
-      .then((data) => console.log(data));
-  }, []);
-
+const Signup = () => {
   return (
     <div>
       <form>
+        <div>
+          <label>Name:</label>
+          <input type="text" name="name" />
+        </div>
         <div>
           <label>Email:</label>
           <input type="text" name="email" />
@@ -23,4 +21,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;
