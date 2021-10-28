@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Form, Field } from 'react-final-form';
 
 class SignUp extends Component {
   render() {
